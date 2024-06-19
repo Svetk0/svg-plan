@@ -73,10 +73,10 @@ const createSvg = (pointsPath) => {
     const startPointX = 0;
     const startPointY = 0;
     let path = document.getElementById("plan");
-    path.setAttribute('d', `M${Math.round(startPointX / 10)}  ${Math.round(startPointY / 10)}  ${pointsPath} z`);
-
+    //path.setAttribute('d', `M${Math.round(startPointX / 10)}  ${Math.round(startPointY / 10)}  ${pointsPath} z`);
+    const testPath = 'L0 130 L56 130 L56 224 L222 224 L222 0';
     // path.setAttribute('d', `M${Math.round(startPointX / 10)}  ${Math.round(startPointY / 10)} L0 0 `);
-    
+    path.setAttribute('d', `M${Math.round(startPointX / 10)}  ${Math.round(startPointY / 10)}  ${testPath} z`);
 }
 createSvg(getPath());
 
